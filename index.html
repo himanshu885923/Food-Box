@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Resources/Custom11.css" />
+    <title>FooDBoX</title>
+    <link rel="icon" href="Resources/Icon-2.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--font awesom-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--Ekko Box-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+          <!--AOS-->
+          <link rel="stylesheet" href="Resources/aos-master/aos-master/dist/aos.css">
+          <script src="Resources/aos-master/aos-master/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm container my-3">
+      <a href="index.html" class="navbar-brand">
+        <img src="Resources/Icon-2.png" height="60px" alt="Icon" />
+        <span>FOOD</span>BOX
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#my-navbar"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="my-navbar">
+        <ul class="navbar-nav mx-auto p-2">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="" data-toggle="modal" data-target="#myModal"
+              >Get In Touch</a
+            >
+          </li>
+        </ul>
+        <a id="call" href="tel:981XXXXXXX"
+          ><i class="fa-solid fa-mobile-screen"></i> 981XXXXXXX</a
+        >
+      </div>
+    </nav>
+
+    <section class="">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Resources/B-4.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="Resources/B-1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="Resources/B-3.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="Resources/B-2.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleIndicators"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleIndicators"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="text-center container" id="dishes" data-aos="zoom-in-down">
+      <h4 class="my-5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, totam?
+      </h4>
+      <div class="row">
+        <div class="col-sm p-2">
+          <div class="c-dishes-card">
+            <img src="Resources/P-2.jpg" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="col-sm p-2">
+          <div class="c-dishes-card">
+            <img src="Resources/P-3.jpg" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="col-sm p-2">
+          <div class="c-dishes-card">
+            <img src="Resources/P-4.jpg" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="col-sm p-2">
+          <div class="c-dishes-card">
+            <img src="Resources/P-5.jpg" alt="" />
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="btn btn-primary my-5 get-in-touch"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Get in Touch <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </section>
+    <section id="sec-2" >
+      <p>Lorem ipsum dolor sit amet.</p>
+      <h6>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quod?
+      </h6>
+      <br/>
+      <br/>
+      <div my-4 class="fa-1.5x">
+        <p>
+          <i class="fa-solid fa-mug-saucer fa-2x"x></i> <br />
+          <label>Lorem, ipsum dolor.</label>
+        </p>
+        <p>
+          <i class="fa-solid fa-mug-saucer fa-2x"></i> <br />
+          <label>Lorem, ipsum dolor.</label>
+        </p>
+        <p class="border-0">
+          <i class="fa-solid fa-mug-saucer fa-2x"></i> <br />
+          <label>Lorem, ipsum dolor.</label>
+        </p>
+        <br />
+        <button style="color: aliceblue;"
+          class="btn btn-secoandry my-5 get-in-touch"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
+          Get in Touch <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section id="gallery" class="container my-5"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="100">
+      <a
+        href="Resources/B-5.jpg"
+        data-toggle="lightbox"
+        data-gallery="my-gallery"
+      >
+        <img src="Resources/B-5.jpg" alt="" />
+      </a>
+      <a
+        href="Resources/B-6.jpg"
+        data-toggle="lightbox"
+        data-gallery="my-gallery"
+      >
+        <img src="Resources/B-6.jpg" alt="" />
+      </a>
+      <a
+        href="Resources/B-7.jpg"
+        data-toggle="lightbox"
+        data-gallery="my-gallery"
+      >
+        <img src="Resources/B-7.jpg" alt="" />
+      </a>
+      <a
+        href="Resources/B-8.jpg"
+        data-toggle="lightbox"
+        data-gallery="my-gallery"
+      >
+        <img src="Resources/B-8.jpg" alt="" />
+      </a>
+      <a
+        href="Resources/B-9.jpg"
+        data-toggle="lightbox"
+        data-gallery="my-gallery"
+      >
+        <img src="Resources/B-9.jpg" alt="" />
+      </a>
+    </section>
+    <section class="container-fluid text-center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.0260577444624!2d77.51469617473128!3d28.47876189104837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea87e2e48933%3A0x6d080ba06746b37c!2s14th%20St%2C%20Pocket%20G%2C%20Sector%20Alpha%20II%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201310!5e0!3m2!1sen!2sin!4v1687184158588!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <br/>
+    <button
+        class="btn btn-primary my-5 get-in-touch"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Get in Touch <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    
+    </section>
+    <br />
+    <footer class="bg-dark pd-5 text-center">
+      <p class="text-left">Terms & Condition</p>
+      <a href="index.html">
+        <img src="Resources/Icon-2.png" height="60px" alt="Icon" />
+        <span>FOOD</span>BOX
+      </a>
+      <br /><br />
+      <p>&copy Rights Reserved</p>
+
+      <p>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </p>
+    </footer>
+
+    <!--Button to reach top-->
+    <label id="tbn"><i class="fa-solid fa-arrow-up fa-2x"></i></label>
+
+    <!-- Modal Form -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form name="goole-sheet">
+              <div class="row">
+                <div class="col-sm mt-2">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Name"
+                    pattern="[a-zA-Z]+"
+                    maxlength="20"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="col-sm mt-2">
+                  <input
+                    class="form-control"
+                    type="tel"
+                    name="Phone"
+                    pattern="[0-9]+"
+                    maxlength="10"
+                    placeholder="Your No."
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm mt-2">
+                  <input
+                    class="form-control"
+                    type="address"
+                    name="Address"
+                    pattern="[a-zA-Z0-9]+"
+                    maxlength="30"
+                    placeholder="Your Address"
+                  />
+                </div>
+                <div class="col-sm mt-2">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Query"
+                    pattern="[a-zA-Z0-9]+"
+                    maxlength="50"
+                    placeholder="Your Query"
+                  />
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary mt-4 px-5">Sumbit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    //ScriptForLightBox
+    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+    //Script for Goole Sheet
+    var scriptURL="https://script.google.com/macros/s/AKfycbwK0_cdeGsC4wneZvxZfxdaZARtuF_AkdPCYFEmX-mAxudoNJyPSHJlcMBXjKw4hZICyQ/exec";
+    var form=document.forms['goole-sheet'];
+    form.addEventListener('submit', e =>{
+      e.preventDefault()
+      fetch(scriptURL, {method:'Post', body: new FormData(form)})
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+    });
+    //Script for scroll to top
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 40){
+          $('#tbn').fadeIn();
+        } else{
+          $('#tbn').fadeOut();
+        }
+      });
+      $('#tbn').click(function() {
+        $('html, body').animate({scrollTop : 0}, 800);
+      });
+    });
+  //AOS Script
+    AOS.init();
+  </script>
+</html>
